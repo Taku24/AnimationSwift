@@ -50,11 +50,11 @@ extension MainViewController {
         //動く時間
         moveToCenter.duration = 1.0
         
+        //imageView
         mainView.imageView.layer.addAnimation(moveToCenter, forKey: nil)
         
+        //Label
         mainView.label.layer.addAnimation(moveToCenter, forKey: nil)
-        
-        
     }
     
 }
