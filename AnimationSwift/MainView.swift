@@ -12,6 +12,8 @@ class MainView: UIView {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var actionButton: UIButton!
     
     let nibName = "MainView"
     var view: UIView!

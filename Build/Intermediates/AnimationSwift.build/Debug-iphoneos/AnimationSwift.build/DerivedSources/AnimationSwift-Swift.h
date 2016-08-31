@@ -117,11 +117,14 @@ SWIFT_CLASS("_TtC14AnimationSwift11AppDelegate")
 @class NSCoder;
 @class UIImageView;
 @class UILabel;
+@class UIButton;
 
 SWIFT_CLASS("_TtC14AnimationSwift8MainView")
 @interface MainView : UIView
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified secondLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified actionButton;
 @property (nonatomic, readonly, copy) NSString * _Nonnull nibName;
 @property (nonatomic, strong) UIView * _Null_unspecified view;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -138,13 +141,13 @@ SWIFT_CLASS("_TtC14AnimationSwift18MainViewController")
 - (void)loadView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface MainViewController (SWIFT_EXTENSION(AnimationSwift))
+- (void)onClickAction:(UIButton * _Nonnull)sender;
 - (void)moveImageView;
 @end
 
