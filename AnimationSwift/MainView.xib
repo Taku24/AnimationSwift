@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView" customModule="AnimationSwift" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="cPo-67-WmZ" id="Acz-Rm-WCb"/>
+                <outlet property="label" destination="B9l-LY-pme" id="nQh-eE-DNr"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,15 +19,27 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample" translatesAutoresizingMaskIntoConstraints="NO" id="cPo-67-WmZ">
                     <rect key="frame" x="263" y="250" width="74" height="75"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="75" id="My7-9F-mN2"/>
-                        <constraint firstAttribute="width" constant="74" id="R7n-za-IqL"/>
+                        <constraint firstAttribute="height" constant="75" id="NXN-o4-ht3"/>
+                        <constraint firstAttribute="width" constant="74" id="bMu-f8-v6H"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動いてる〜〜〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9l-LY-pme">
+                    <rect key="frame" x="202" y="342" width="197" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="83m-sq-hAh"/>
+                        <constraint firstAttribute="width" constant="197" id="Ubo-Bn-ONg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="cPo-67-WmZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="250" id="0cT-Lz-7Lu"/>
-                <constraint firstItem="cPo-67-WmZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="clb-gT-Uih"/>
+                <constraint firstItem="cPo-67-WmZ" firstAttribute="centerX" secondItem="B9l-LY-pme" secondAttribute="centerX" id="8yF-UZ-2Vu"/>
+                <constraint firstItem="B9l-LY-pme" firstAttribute="top" secondItem="cPo-67-WmZ" secondAttribute="bottom" constant="17" id="E65-uy-jyB"/>
+                <constraint firstItem="cPo-67-WmZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="250" id="hKv-w2-10Y"/>
+                <constraint firstItem="cPo-67-WmZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="k5D-yq-hTb"/>
             </constraints>
         </view>
     </objects>

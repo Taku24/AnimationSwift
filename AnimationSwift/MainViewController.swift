@@ -52,6 +52,8 @@ extension MainViewController {
         
         mainView.imageView.layer.addAnimation(moveToCenter, forKey: nil)
         
+        mainView.label.layer.addAnimation(moveToCenter, forKey: nil)
+        
         
     }
     

@@ -116,10 +116,12 @@ SWIFT_CLASS("_TtC14AnimationSwift11AppDelegate")
 
 @class NSCoder;
 @class UIImageView;
+@class UILabel;
 
 SWIFT_CLASS("_TtC14AnimationSwift8MainView")
 @interface MainView : UIView
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
 @property (nonatomic, readonly, copy) NSString * _Nonnull nibName;
 @property (nonatomic, strong) UIView * _Null_unspecified view;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;

@@ -11,6 +11,7 @@ import UIKit
 class MainView: UIView {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
     let nibName = "MainView"
     var view: UIView!
