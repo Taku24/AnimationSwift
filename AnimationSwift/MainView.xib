@@ -15,19 +15,22 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPo-67-WmZ">
-                    <rect key="frame" x="180" y="194" width="240" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample" translatesAutoresizingMaskIntoConstraints="NO" id="cPo-67-WmZ">
+                    <rect key="frame" x="263" y="250" width="74" height="75"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="240" id="1OP-GK-YG8"/>
-                        <constraint firstAttribute="height" constant="128" id="qlW-fs-yjT"/>
+                        <constraint firstAttribute="height" constant="75" id="My7-9F-mN2"/>
+                        <constraint firstAttribute="width" constant="74" id="R7n-za-IqL"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="cPo-67-WmZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NhT-c4-QBq"/>
-                <constraint firstItem="cPo-67-WmZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="194" id="iGE-bI-Cz0"/>
+                <constraint firstItem="cPo-67-WmZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="250" id="0cT-Lz-7Lu"/>
+                <constraint firstItem="cPo-67-WmZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="clb-gT-Uih"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Sample" width="51" height="51"/>
+    </resources>
 </document>
