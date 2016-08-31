@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		319C0B2F1D76930A00635736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319C0B2E1D76930A00635736 /* AppDelegate.swift */; };
-		319C0B311D76930A00635736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319C0B301D76930A00635736 /* ViewController.swift */; };
+		319C0B311D76930A00635736 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319C0B301D76930A00635736 /* MainViewController.swift */; };
 		319C0B341D76930A00635736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319C0B321D76930A00635736 /* Main.storyboard */; };
 		319C0B361D76930A00635736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319C0B351D76930A00635736 /* Assets.xcassets */; };
 		319C0B391D76930A00635736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319C0B371D76930A00635736 /* LaunchScreen.storyboard */; };
+		319C0B461D7695C000635736 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319C0B451D7695C000635736 /* MainView.xib */; };
+		319C0B481D76973000635736 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319C0B471D76973000635736 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		319C0B2B1D76930A00635736 /* AnimationSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		319C0B2E1D76930A00635736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		319C0B301D76930A00635736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		319C0B301D76930A00635736 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		319C0B331D76930A00635736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		319C0B351D76930A00635736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		319C0B381D76930A00635736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		319C0B3A1D76930A00635736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319C0B451D7695C000635736 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		319C0B471D76973000635736 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				319C0B2E1D76930A00635736 /* AppDelegate.swift */,
-				319C0B301D76930A00635736 /* ViewController.swift */,
-				319C0B321D76930A00635736 /* Main.storyboard */,
+				319C0B401D76955300635736 /* Model */,
+				319C0B411D76955900635736 /* View */,
+				319C0B421D76956200635736 /* Controller */,
 				319C0B351D76930A00635736 /* Assets.xcassets */,
 				319C0B371D76930A00635736 /* LaunchScreen.storyboard */,
 				319C0B3A1D76930A00635736 /* Info.plist */,
 			);
 			path = AnimationSwift;
+			sourceTree = "<group>";
+		};
+		319C0B401D76955300635736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		319C0B411D76955900635736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				319C0B471D76973000635736 /* MainView.swift */,
+				319C0B451D7695C000635736 /* MainView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		319C0B421D76956200635736 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				319C0B301D76930A00635736 /* MainViewController.swift */,
+				319C0B321D76930A00635736 /* Main.storyboard */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					319C0B2A1D76930A00635736 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZCYDEPGR36;
 					};
 				};
 			};
@@ -123,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				319C0B391D76930A00635736 /* LaunchScreen.storyboard in Resources */,
+				319C0B461D7695C000635736 /* MainView.xib in Resources */,
 				319C0B361D76930A00635736 /* Assets.xcassets in Resources */,
 				319C0B341D76930A00635736 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319C0B311D76930A00635736 /* ViewController.swift in Sources */,
+				319C0B311D76930A00635736 /* MainViewController.swift in Sources */,
+				319C0B481D76973000635736 /* MainView.swift in Sources */,
 				319C0B2F1D76930A00635736 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimationSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taku.apps.AnimationSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +296,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimationSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taku.apps.AnimationSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
