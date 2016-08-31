@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "65cdeb82584864665d3ceff06001e6da"
+build_time: [525934432, 428437000]
+inputs:
+  "/Volumes/DATA 1/Swift/AnimationSwift/AnimationSwift/MainViewController.swift": [525933889, 0]
+  "/Volumes/DATA 1/Swift/AnimationSwift/AnimationSwift/MainView.swift": [525934084, 0]
+  "/Volumes/DATA 1/Swift/AnimationSwift/AnimationSwift/AppDelegate.swift": [525932554, 0]
