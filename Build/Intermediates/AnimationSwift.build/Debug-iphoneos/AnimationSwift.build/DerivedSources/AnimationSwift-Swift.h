@@ -132,11 +132,18 @@ SWIFT_CLASS("_TtC14AnimationSwift8MainView")
 
 SWIFT_CLASS("_TtC14AnimationSwift18MainViewController")
 @interface MainViewController : UIViewController
+@property (nonatomic, readonly, strong) MainView * _Nonnull mainView;
 - (void)loadView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface MainViewController (SWIFT_EXTENSION(AnimationSwift))
+- (void)moveImageView;
 @end
 
 #pragma clang diagnostic pop
