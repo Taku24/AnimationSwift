@@ -48,12 +48,13 @@ extension MainViewController {
         moveToCenter.toValue = view.frame.size.width/2
         
         //動く時間
-        moveToCenter.duration = 1.0
+        moveToCenter.duration = 2.0
         
         //imageView
         mainView.imageView.layer.addAnimation(moveToCenter, forKey: nil)
         
         //Label
+        moveToCenter.beginTime = CACurrentMediaTime() + 0.5
         mainView.label.layer.addAnimation(moveToCenter, forKey: nil)
     }
     

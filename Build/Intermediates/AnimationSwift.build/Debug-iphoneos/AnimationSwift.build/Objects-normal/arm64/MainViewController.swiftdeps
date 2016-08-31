@@ -7,25 +7,29 @@ provides-member:
 - ["C14AnimationSwift18MainViewController", ""]
 - ["C14AnimationSwift18MainViewController", "moveImageView"]
 provides-dynamic-lookup:
-- "mainView"
 - "viewDidLoad"
 - "loadView"
 - "moveImageView"
-- "viewDidAppear"
 - "didReceiveMemoryWarning"
+- "mainView"
+- "viewDidAppear"
 depends-top-level:
-- "UIViewController"
-- !private "StringLiteralType"
-- "MainViewController"
-- !private "-"
-- !private "/"
 - "MainView"
-- !private "CABasicAnimation"
+- !private "StringLiteralType"
+- !private "CACurrentMediaTime"
+- !private "-"
+- "MainViewController"
+- "UIViewController"
+- !private "+"
 - "Bool"
+- !private "/"
+- !private "CABasicAnimation"
 depends-member:
 - !private ["Ps9AnyObject", "CABasicAnimation"]
+- !private ["Ps9AnyObject", "CACurrentMediaTime"]
 - ["Ps9AnyObject", "MainView"]
 - !private ["Ps9AnyObject", "addAnimation"]
+- !private ["Ps9AnyObject", "beginTime"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "duration"]
 - !private ["Ps9AnyObject", "frame"]
@@ -42,24 +46,29 @@ depends-member:
 - ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["PSo8CAAction", "beginTime"]
 - !private ["PSo8CAAction", "duration"]
 - !private ["PSo8CAAction", "fromValue"]
 - !private ["PSo8CAAction", "init"]
 - !private ["PSo8CAAction", "toValue"]
+- !private ["CSo11CAAnimation", "beginTime"]
 - !private ["CSo11CAAnimation", "duration"]
 - !private ["CSo11CAAnimation", "fromValue"]
 - !private ["CSo11CAAnimation", "init"]
 - !private ["CSo11CAAnimation", "toValue"]
+- !private ["CSo16CABasicAnimation", "beginTime"]
 - !private ["CSo16CABasicAnimation", "duration"]
 - !private ["CSo16CABasicAnimation", "fromValue"]
 - !private ["CSo16CABasicAnimation", "init"]
 - !private ["CSo16CABasicAnimation", "toValue"]
 - !private ["CSo7CALayer", "addAnimation"]
 - !private ["PSo13CAMediaTiming", "addAnimation"]
+- !private ["PSo13CAMediaTiming", "beginTime"]
 - !private ["PSo13CAMediaTiming", "duration"]
 - !private ["PSo13CAMediaTiming", "fromValue"]
 - !private ["PSo13CAMediaTiming", "init"]
 - !private ["PSo13CAMediaTiming", "toValue"]
+- !private ["CSo19CAPropertyAnimation", "beginTime"]
 - !private ["CSo19CAPropertyAnimation", "duration"]
 - !private ["CSo19CAPropertyAnimation", "fromValue"]
 - !private ["CSo19CAPropertyAnimation", "init"]
@@ -68,8 +77,10 @@ depends-member:
 - !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGSize", "width"]
 - !private ["Ps11CVarArgType", "CABasicAnimation"]
+- !private ["Ps11CVarArgType", "CACurrentMediaTime"]
 - ["Ps11CVarArgType", "MainView"]
 - !private ["Ps11CVarArgType", "addAnimation"]
+- !private ["Ps11CVarArgType", "beginTime"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "duration"]
 - !private ["Ps11CVarArgType", "frame"]
@@ -87,8 +98,10 @@ depends-member:
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Ps28CustomDebugStringConvertible", "CABasicAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "CACurrentMediaTime"]
 - ["Ps28CustomDebugStringConvertible", "MainView"]
 - !private ["Ps28CustomDebugStringConvertible", "addAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "beginTime"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "duration"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
@@ -106,8 +119,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CABasicAnimation"]
+- !private ["Ps23CustomStringConvertible", "CACurrentMediaTime"]
 - ["Ps23CustomStringConvertible", "MainView"]
 - !private ["Ps23CustomStringConvertible", "addAnimation"]
+- !private ["Ps23CustomStringConvertible", "beginTime"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "duration"]
 - !private ["Ps23CustomStringConvertible", "frame"]
@@ -125,8 +140,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CABasicAnimation"]
+- !private ["Ps9Equatable", "CACurrentMediaTime"]
 - ["Ps9Equatable", "MainView"]
 - !private ["Ps9Equatable", "addAnimation"]
+- !private ["Ps9Equatable", "beginTime"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "duration"]
 - !private ["Ps9Equatable", "frame"]
@@ -146,8 +163,10 @@ depends-member:
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - !private ["Ps8Hashable", "CABasicAnimation"]
+- !private ["Ps8Hashable", "CACurrentMediaTime"]
 - ["Ps8Hashable", "MainView"]
 - !private ["Ps8Hashable", "addAnimation"]
+- !private ["Ps8Hashable", "beginTime"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "duration"]
 - !private ["Ps8Hashable", "frame"]
@@ -169,6 +188,7 @@ depends-member:
 - !private ["C14AnimationSwift8MainView", "label"]
 - ["C14AnimationSwift18MainViewController", "Bool"]
 - !private ["C14AnimationSwift18MainViewController", "CABasicAnimation"]
+- !private ["C14AnimationSwift18MainViewController", "CACurrentMediaTime"]
 - ["C14AnimationSwift18MainViewController", "MainView"]
 - ["C14AnimationSwift18MainViewController", "deinit"]
 - ["C14AnimationSwift18MainViewController", "didReceiveMemoryWarning"]
@@ -180,8 +200,10 @@ depends-member:
 - ["C14AnimationSwift18MainViewController", "viewDidAppear"]
 - ["C14AnimationSwift18MainViewController", "viewDidLoad"]
 - !private ["PSo8NSCoding", "CABasicAnimation"]
+- !private ["PSo8NSCoding", "CACurrentMediaTime"]
 - ["PSo8NSCoding", "MainView"]
 - !private ["PSo8NSCoding", "addAnimation"]
+- !private ["PSo8NSCoding", "beginTime"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "duration"]
 - !private ["PSo8NSCoding", "frame"]
@@ -198,11 +220,13 @@ depends-member:
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "beginTime"]
 - !private ["PSo9NSCopying", "duration"]
 - !private ["PSo9NSCopying", "fromValue"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "toValue"]
 - !private ["PSo26NSExtensionRequestHandling", "CABasicAnimation"]
+- !private ["PSo26NSExtensionRequestHandling", "CACurrentMediaTime"]
 - ["PSo26NSExtensionRequestHandling", "MainView"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -215,8 +239,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CABasicAnimation"]
+- !private ["CSo8NSObject", "CACurrentMediaTime"]
 - ["CSo8NSObject", "MainView"]
 - !private ["CSo8NSObject", "addAnimation"]
+- !private ["CSo8NSObject", "beginTime"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "duration"]
 - !private ["CSo8NSObject", "frame"]
@@ -233,8 +259,10 @@ depends-member:
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CABasicAnimation"]
+- !private ["PSo16NSObjectProtocol", "CACurrentMediaTime"]
 - ["PSo16NSObjectProtocol", "MainView"]
 - !private ["PSo16NSObjectProtocol", "addAnimation"]
+- !private ["PSo16NSObjectProtocol", "beginTime"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "duration"]
 - !private ["PSo16NSObjectProtocol", "frame"]
@@ -263,6 +291,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "label"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo21UIAppearanceContainer", "CABasicAnimation"]
+- !private ["PSo21UIAppearanceContainer", "CACurrentMediaTime"]
 - ["PSo21UIAppearanceContainer", "MainView"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
@@ -278,6 +307,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CABasicAnimation"]
+- !private ["PSo18UIContentContainer", "CACurrentMediaTime"]
 - ["PSo18UIContentContainer", "MainView"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
@@ -299,6 +329,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "label"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo18UIFocusEnvironment", "CABasicAnimation"]
+- !private ["PSo18UIFocusEnvironment", "CACurrentMediaTime"]
 - ["PSo18UIFocusEnvironment", "MainView"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
@@ -317,6 +348,7 @@ depends-member:
 - !private ["CSo7UILabel", "layer"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CABasicAnimation"]
+- !private ["CSo11UIResponder", "CACurrentMediaTime"]
 - ["CSo11UIResponder", "MainView"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "frame"]
@@ -331,6 +363,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "CABasicAnimation"]
+- !private ["PSo16UIStateRestoring", "CACurrentMediaTime"]
 - ["PSo16UIStateRestoring", "MainView"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
@@ -342,6 +375,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CABasicAnimation"]
+- !private ["PSo18UITraitEnvironment", "CACurrentMediaTime"]
 - ["PSo18UITraitEnvironment", "MainView"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "frame"]
@@ -363,6 +397,7 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CABasicAnimation"]
+- !private ["CSo16UIViewController", "CACurrentMediaTime"]
 - ["CSo16UIViewController", "MainView"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
