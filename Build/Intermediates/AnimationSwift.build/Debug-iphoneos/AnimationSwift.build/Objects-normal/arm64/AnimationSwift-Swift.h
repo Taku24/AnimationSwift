@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -113,15 +114,36 @@ SWIFT_CLASS("_TtC14AnimationSwift11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
 @class NSCoder;
+@class UIImageView;
 
-SWIFT_CLASS("_TtC14AnimationSwift14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC14AnimationSwift8MainView")
+@interface MainView : UIView
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
+@property (nonatomic, readonly, copy) NSString * _Nonnull nibName;
+@property (nonatomic, strong) UIView * _Null_unspecified view;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)createView;
+- (UIView * _Nonnull)loadFromNib;
+@end
+
+@class NSBundle;
+
+SWIFT_CLASS("_TtC14AnimationSwift18MainViewController")
+@interface MainViewController : UIViewController
+@property (nonatomic, readonly, strong) MainView * _Nonnull mainView;
+- (void)loadView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface MainViewController (SWIFT_EXTENSION(AnimationSwift))
+- (void)moveImageView;
 @end
 
 #pragma clang diagnostic pop
